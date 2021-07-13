@@ -6,6 +6,6 @@ read uname
 while read line
 do
   reponame=$uname"/"$line
-  echo $reponame
+  echo $reponame" Delete" 
   gh repo-delete $reponame
 done < delete.txt
